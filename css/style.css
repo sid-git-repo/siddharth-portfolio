@@ -132,6 +132,13 @@ a:hover { text-decoration: underline; }
   padding-top: 4px;
 }
 
+.duration {
+  display: block;
+  margin-top: 4px;
+  color: var(--accent);
+  font-size: 0.8rem;
+}
+
 .timeline-content h3 {
   margin: 0 0 4px;
   font-size: 1.1rem;
