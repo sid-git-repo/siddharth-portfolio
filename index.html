@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siddharth Kumar Singh — DevOps &amp; AI Engineer</title>
+<meta name="description" content="AWS DevOps Engineer with 9 years of enterprise infrastructure experience, now building GitOps homelabs and hands-on AI/LLM systems.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <span class="brand">Siddharth Kumar Singh</span>
+    <nav class="navbar">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <img class="avatar" src="https://avatars.githubusercontent.com/u/50859401?v=4" alt="Siddharth Kumar Singh">
+    <h1>Siddharth Kumar Singh</h1>
+    <p class="tagline">DevOps Engineer · Father · Builder of systems that heal themselves and memories that never fade.</p>
+    <p class="location">Bangalore, India</p>
+    <div class="hero-links">
+      <a class="btn" href="mailto:sendtosiddharthsingh@gmail.com">Email</a>
+      <a class="btn btn-outline" href="https://github.com/sid-git-repo" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+
+  <section id="about" class="block">
+    <h2>About</h2>
+    <p>
+      Seasoned AWS DevOps Engineer with 9 years of progressive experience
+      architecting and deploying scalable, secure, cost-effective cloud
+      infrastructure — CI/CD pipelines, infrastructure as code, and
+      configuration management for enterprise clients including Bank of
+      America and Citi Bank.
+    </p>
+    <p>
+      Outside of client work, that same discipline goes into a home lab:
+      a production-shaped GitOps platform running AWX-on-Kubernetes with
+      a real HA Postgres cluster, and — more recently — hands-on AI
+      engineering: retrieval-augmented generation, agentic tool use, and
+      comparing how LangChain and LangGraph rebuild the same systems a
+      framework-free implementation already proves out. The through-line
+      is the same in both halves: automate it, make it observable, make
+      it survive a reboot.
+    </p>
+  </section>
+
+  <section id="experience" class="block">
+    <h2>Experience</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-meta">Jan 2024 – Present</div>
+        <div class="timeline-content">
+          <h3>AWS DevOps Engineer <span class="company">· Cognizant</span></h3>
+          <ul>
+            <li>Architect and automate AWS infrastructure with Terraform and CloudFormation, integrated into Jenkins CI/CD pipelines.</li>
+            <li>Enforce compliance via security scanning (Mend, Checkmarx, Qualys) as part of a pre-approved release process.</li>
+            <li>Automate provisioning across EC2, S3, VPC, IAM, ECS (EC2 &amp; Fargate), Lambda, CloudWatch, and Route 53.</li>
+            <li>Support dockerized deployments and drive monitoring/incident response with CloudWatch and Splunk.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-meta">Jan 2020 – Jan 2024</div>
+        <div class="timeline-content">
+          <h3>Ansible Developer <span class="company">· Accenture</span></h3>
+          <ul>
+            <li>Delivered a centralized Ansible Tower as a Service (ATaaS) platform enforcing deployment best practices.</li>
+            <li>Automated onboarding of all Bank of America applications onto the ATaaS platform.</li>
+            <li>Built Ansible playbooks automating deployment, upgrade, and patching across Windows and Linux fleets.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-meta">2016 – 2020</div>
+        <div class="timeline-content">
+          <h3>Build and Release Engineer <span class="company">· HCL Technologies</span></h3>
+          <ul>
+            <li>Built CI/CD processes from scratch for Citi Bank, improving build and release cycle times.</li>
+            <li>Configured and maintained Jenkins, integrating tooling to streamline build orchestration.</li>
+            <li>Automated deployments with Ansible and UrbanCode Deploy under formal production change management.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects" class="block">
+    <h2>Independent Projects</h2>
+    <p class="section-sub">Self-directed work — a home lab built to the same standard as production infrastructure.</p>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <h3>AWX-on-Kubernetes GitOps Platform</h3>
+        <p>A full home lab: a Patroni/etcd/HAProxy HA PostgreSQL cluster feeding two AWX instances in minikube, entirely GitOps-managed by ArgoCD — commit to Git, never touch the live cluster by hand.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Config-as-Code for AWX</h3>
+        <p>A layer sitting on top of the running AWX, reconciling organizations, credentials, and job templates purely through the AWX REST API — deliberately no Kubernetes access, keeping deployment and configuration concerns separate.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Self-Hosted AI Stack</h3>
+        <p>A headless Ubuntu server running Ollama, a Streamlit chat UI, and a custom RAG service — deployed and redeployed via the same Ansible/AWX GitOps pipeline as the rest of the lab.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>RAG → LangChain → LangGraph</h3>
+        <p>The same retrieval and tool-calling agent built three ways — hand-written, then with LangChain, then with LangGraph — to see exactly what each framework layer replaces and where a small local model's limits show up in practice.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Observability Stack</h3>
+        <p>Prometheus and Grafana watching the lab's own Docker workload and real host metrics — built after noticing memory usage with no visibility into where it was going.</p>
+      </div>
+
+      <div class="project-card">
+        <h3><a href="https://org-2026.github.io/Ashvani-Agro/" target="_blank" rel="noopener">Ashvani Agro — Live Site ↗</a></h3>
+        <p>A real small business's public website, designed, containerized, and shipped to two independent hosts (a Cloudflare-tunneled home server and GitHub Pages) for redundancy.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="block contact-block">
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:sendtosiddharthsingh@gmail.com">sendtosiddharthsingh@gmail.com</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/sid-git-repo" target="_blank" rel="noopener">github.com/sid-git-repo</a>
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span id="year"></span> Siddharth Kumar Singh
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
